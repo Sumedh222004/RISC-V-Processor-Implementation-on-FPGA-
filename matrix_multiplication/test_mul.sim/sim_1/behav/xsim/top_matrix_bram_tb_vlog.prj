@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../test_mul.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../test_mul.srcs/sources_1/new/BRAM.v" \
+"../../../../test_mul.srcs/sources_1/new/img_transfer_uart.v" \
+"../../../../test_mul.srcs/sources_1/new/matrix_multiplier.v" \
+"../../../../test_mul.srcs/sources_1/new/top_matrix_bram.v" \
+"../../../../test_mul.srcs/sim_1/new/top_matrix_bram_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

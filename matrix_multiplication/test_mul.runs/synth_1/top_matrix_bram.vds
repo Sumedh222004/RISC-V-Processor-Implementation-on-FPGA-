@@ -1,0 +1,421 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Jun 27 19:07:36 2025
+# Process ID         : 4324
+# Current directory  : C:/Users/ASUS/test_mul/test_mul.runs/synth_1
+# Command line       : vivado.exe -log top_matrix_bram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_matrix_bram.tcl
+# Log file           : C:/Users/ASUS/test_mul/test_mul.runs/synth_1/top_matrix_bram.vds
+# Journal file       : C:/Users/ASUS/test_mul/test_mul.runs/synth_1\vivado.jou
+# Running On         : Anvesh
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 9 5900HX with Radeon Graphics        
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16539 MB
+# Swap memory        : 1342 MB
+# Total Virtual      : 17881 MB
+# Available Virtual  : 6083 MB
+#-----------------------------------------------------------
+source top_matrix_bram.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/ASUS/test_mul/test_mul.srcs/utils_1/imports/synth_1/top_matrix_bram.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ASUS/test_mul/test_mul.srcs/utils_1/imports/synth_1/top_matrix_bram.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_matrix_bram -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23656
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1058.008 ; gain = 469.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_matrix_bram' [C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/top_matrix_bram.v:3]
+INFO: [Synth 8-6157] synthesizing module 'matrix_multiplier' [C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/matrix_multiplier.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'matrix_multiplier' (0#1) [C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/matrix_multiplier.v:2]
+INFO: [Synth 8-6157] synthesizing module 'img_transfer_uart' [C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/img_transfer_uart.v:150]
+INFO: [Synth 8-226] default block is never used [C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/img_transfer_uart.v:238]
+INFO: [Synth 8-6155] done synthesizing module 'img_transfer_uart' (0#1) [C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/img_transfer_uart.v:150]
+INFO: [Synth 8-6157] synthesizing module 'BRAM' [C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/BRAM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/ASUS/test_mul/test_mul.runs/synth_1/.Xil/Vivado-4324-Anvesh/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [C:/Users/ASUS/test_mul/test_mul.runs/synth_1/.Xil/Vivado-4324-Anvesh/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 'wea' does not match port width (4) of module 'blk_mem_gen_0' [C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/BRAM.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'BRAM' (0#1) [C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/BRAM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_matrix_bram' (0#1) [C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/top_matrix_bram.v:3]
+WARNING: [Synth 8-6014] Unused sequential element ii_reg was removed.  [C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/matrix_multiplier.v:76]
+WARNING: [Synth 8-6014] Unused sequential element jj_reg was removed.  [C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/matrix_multiplier.v:76]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1188.863 ; gain = 600.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1188.863 ; gain = 600.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1188.863 ; gain = 600.559
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1188.863 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ASUS/test_mul/test_mul.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'bram/inst1'
+Finished Parsing XDC File [c:/Users/ASUS/test_mul/test_mul.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'bram/inst1'
+Parsing XDC File [C:/Users/ASUS/test_mul/test_mul.srcs/constrs_1/new/xdc.xdc]
+Finished Parsing XDC File [C:/Users/ASUS/test_mul/test_mul.srcs/constrs_1/new/xdc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ASUS/test_mul/test_mul.srcs/constrs_1/new/xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_matrix_bram_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_matrix_bram_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1273.496 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1273.496 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1273.496 ; gain = 685.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1273.496 ; gain = 685.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for bram/inst1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1273.496 ; gain = 685.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'matrix_multiplier'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |           0000000000000000000001 |                            00000
+                  READ_A |           0000000000000000000010 |                            00001
+                 IDLE_A1 |           0000000000000000000100 |                            00010
+                 IDLE_A2 |           0000000000000000001000 |                            00011
+                  TAKE_A |           0000000000000000010000 |                            00100
+                  PREP_B |           0000000000000000100000 |                            00101
+                  READ_B |           0000000000000001000000 |                            00110
+                 IDLE_B1 |           0000000000000010000000 |                            00111
+                 IDLE_B2 |           0000000000000100000000 |                            01000
+                  TAKE_B |           0000000000001000000000 |                            01001
+            COMPUTE_INIT |           0000000000010000000000 |                            01010
+            COMPUTE_STEP |           0000000000100000000000 |                            01011
+                 WRITE_C |           0000000001000000000000 |                            01100
+                 IDLE_C1 |           0000000010000000000000 |                            01101
+                 IDLE_C2 |           0000000100000000000000 |                            01110
+                  TAKE_C |           0000001000000000000000 |                            01111
+                 PREP_RC |           0000010000000000000000 |                            10000
+                  READ_C |           0000100000000000000000 |                            10001
+                IDLE_RC1 |           0001000000000000000000 |                            10010
+                IDLE_RC2 |           0010000000000000000000 |                            10011
+                 TAKE_RC |           0100000000000000000000 |                            10100
+                    DONE |           1000000000000000000000 |                            10101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'matrix_multiplier'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1273.496 ; gain = 685.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 14    
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 60    
+	               17 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Multipliers : 
+	              32x32  Multipliers := 4     
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 11    
+	   2 Input   32 Bit        Muxes := 44    
+	   3 Input   32 Bit        Muxes := 4     
+	  22 Input   32 Bit        Muxes := 24    
+	  22 Input   22 Bit        Muxes := 1     
+	   2 Input   22 Bit        Muxes := 4     
+	  22 Input   17 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 2     
+	   4 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 39    
+	   3 Input    1 Bit        Muxes := 5     
+	  22 Input    1 Bit        Muxes := 63    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP p_0_in, operation Mode is: A*B.
+DSP Report: operator p_0_in is absorbed into DSP p_0_in.
+DSP Report: operator p_0_in is absorbed into DSP p_0_in.
+DSP Report: Generating DSP p_0_in, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_0_in is absorbed into DSP p_0_in.
+DSP Report: operator p_0_in is absorbed into DSP p_0_in.
+DSP Report: Generating DSP p_0_in, operation Mode is: A*B.
+DSP Report: operator p_0_in is absorbed into DSP p_0_in.
+DSP Report: operator p_0_in is absorbed into DSP p_0_in.
+DSP Report: Generating DSP p_0_in, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_0_in is absorbed into DSP p_0_in.
+DSP Report: operator p_0_in is absorbed into DSP p_0_in.
+DSP Report: Generating DSP p_8_in, operation Mode is: A*B.
+DSP Report: operator p_8_in is absorbed into DSP p_8_in.
+DSP Report: operator p_8_in is absorbed into DSP p_8_in.
+DSP Report: Generating DSP p_8_in, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_8_in is absorbed into DSP p_8_in.
+DSP Report: operator p_8_in is absorbed into DSP p_8_in.
+DSP Report: Generating DSP p_8_in, operation Mode is: A*B.
+DSP Report: operator p_8_in is absorbed into DSP p_8_in.
+DSP Report: operator p_8_in is absorbed into DSP p_8_in.
+DSP Report: Generating DSP p_8_in, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_8_in is absorbed into DSP p_8_in.
+DSP Report: operator p_8_in is absorbed into DSP p_8_in.
+DSP Report: Generating DSP p_2_in, operation Mode is: A*B.
+DSP Report: operator p_2_in is absorbed into DSP p_2_in.
+DSP Report: operator p_2_in is absorbed into DSP p_2_in.
+DSP Report: Generating DSP p_2_in, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_2_in is absorbed into DSP p_2_in.
+DSP Report: operator p_2_in is absorbed into DSP p_2_in.
+DSP Report: Generating DSP p_2_in, operation Mode is: A*B.
+DSP Report: operator p_2_in is absorbed into DSP p_2_in.
+DSP Report: operator p_2_in is absorbed into DSP p_2_in.
+DSP Report: Generating DSP p_2_in, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_2_in is absorbed into DSP p_2_in.
+DSP Report: operator p_2_in is absorbed into DSP p_2_in.
+DSP Report: Generating DSP p_5_in, operation Mode is: A*B.
+DSP Report: operator p_5_in is absorbed into DSP p_5_in.
+DSP Report: operator p_5_in is absorbed into DSP p_5_in.
+DSP Report: Generating DSP p_5_in, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_5_in is absorbed into DSP p_5_in.
+DSP Report: operator p_5_in is absorbed into DSP p_5_in.
+DSP Report: Generating DSP p_5_in, operation Mode is: A*B.
+DSP Report: operator p_5_in is absorbed into DSP p_5_in.
+DSP Report: operator p_5_in is absorbed into DSP p_5_in.
+DSP Report: Generating DSP p_5_in, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_5_in is absorbed into DSP p_5_in.
+DSP Report: operator p_5_in is absorbed into DSP p_5_in.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1296.570 ; gain = 708.266
+---------------------------------------------------------------------------------
+ Sort Area is  p_0_in_0 : 0 0 : 3101 5879 : Used 1 time 0
+ Sort Area is  p_0_in_0 : 0 1 : 2778 5879 : Used 1 time 0
+ Sort Area is  p_2_in_6 : 0 0 : 3101 5879 : Used 1 time 0
+ Sort Area is  p_2_in_6 : 0 1 : 2778 5879 : Used 1 time 0
+ Sort Area is  p_5_in_a : 0 0 : 3101 5879 : Used 1 time 0
+ Sort Area is  p_5_in_a : 0 1 : 2778 5879 : Used 1 time 0
+ Sort Area is  p_8_in_8 : 0 0 : 3101 5879 : Used 1 time 0
+ Sort Area is  p_8_in_8 : 0 1 : 2778 5879 : Used 1 time 0
+ Sort Area is  p_0_in_3 : 0 0 : 2759 5418 : Used 1 time 0
+ Sort Area is  p_0_in_3 : 0 1 : 2659 5418 : Used 1 time 0
+ Sort Area is  p_2_in_7 : 0 0 : 2759 5418 : Used 1 time 0
+ Sort Area is  p_2_in_7 : 0 1 : 2659 5418 : Used 1 time 0
+ Sort Area is  p_5_in_b : 0 0 : 2759 5418 : Used 1 time 0
+ Sort Area is  p_5_in_b : 0 1 : 2659 5418 : Used 1 time 0
+ Sort Area is  p_8_in_9 : 0 0 : 2759 5418 : Used 1 time 0
+ Sort Area is  p_8_in_9 : 0 1 : 2659 5418 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|matrix_multiplier | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1426.258 ; gain = 837.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1429.586 ; gain = 841.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1458.227 ; gain = 869.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1649.250 ; gain = 1060.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1649.250 ; gain = 1060.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1649.250 ; gain = 1060.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1649.250 ; gain = 1060.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1649.250 ; gain = 1060.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1649.250 ; gain = 1060.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|matrix_multiplier | A*B          | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | PCIN>>17+A*B | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | A*B          | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | PCIN>>17+A*B | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | A*B          | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | PCIN>>17+A*B | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | A*B          | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|matrix_multiplier | PCIN>>17+A*B | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |blk_mem_gen |     1|
+|2     |BUFG        |     1|
+|3     |CARRY4      |   106|
+|4     |DSP48E1     |    12|
+|5     |LUT1        |     4|
+|6     |LUT2        |   315|
+|7     |LUT3        |   111|
+|8     |LUT4        |   842|
+|9     |LUT5        |   206|
+|10    |LUT6        |   496|
+|11    |MUXF7       |    64|
+|12    |FDRE        |  1810|
+|13    |FDSE        |     2|
+|14    |IBUF        |     5|
+|15    |OBUF        |     3|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1649.250 ; gain = 1060.945
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 1649.250 ; gain = 976.312
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1649.250 ; gain = 1060.945
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1658.387 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 182 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top_matrix_bram' is not ideal for floorplanning, since the cellview 'matrix_multiplier' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1662.109 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 4314ba6d
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1662.109 ; gain = 1279.098
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1662.109 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ASUS/test_mul/test_mul.runs/synth_1/top_matrix_bram.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_matrix_bram_utilization_synth.rpt -pb top_matrix_bram_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 27 19:08:21 2025...

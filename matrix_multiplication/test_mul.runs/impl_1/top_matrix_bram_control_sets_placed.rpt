@@ -1,0 +1,130 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Jun 27 19:09:19 2025
+| Host         : Anvesh running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_matrix_bram_control_sets_placed.rpt
+| Design       : top_matrix_bram
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    52 |
+|    Minimum number of control sets                        |    52 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    56 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    52 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    45 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               8 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              33 |           13 |
+| Yes          | No                    | No                     |            1046 |          393 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             737 |          273 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------+---------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |             Enable Signal            |         Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+--------------------------------------+---------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                                      | uart/TxD_i_1_n_0                |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | matrix/busy_i_1_n_0                  | rst_IBUF                        |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | uart/bitcounter                      | uart/bitcounter[3]_i_1_n_0      |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG |                                      |                                 |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | uart/rightshiftreg                   |                                 |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG | matrix/ena                           |                                 |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG |                                      | uart/counter[0]_i_1_n_0         |                4 |             14 |         3.50 |
+|  clk_IBUF_BUFG | matrix/bram_addr[16]_i_1_n_0         | rst_IBUF                        |                9 |             17 |         1.89 |
+|  clk_IBUF_BUFG | uart/address[0]_i_1_n_0              | transfer_reset_IBUF             |                5 |             17 |         3.40 |
+|  clk_IBUF_BUFG |                                      | rst_IBUF                        |                8 |             18 |         2.25 |
+|  clk_IBUF_BUFG | matrix/FSM_onehot_state[21]_i_1_n_0  | rst_IBUF                        |                5 |             22 |         4.40 |
+|  clk_IBUF_BUFG | matrix/A[2][3][31]_i_1_n_0           |                                 |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | matrix/A[3][0][31]_i_1_n_0           |                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | matrix/A[1][2][31]_i_1_n_0           |                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | matrix/A[3][2][31]_i_1_n_0           |                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | matrix/A[0][0][31]_i_1_n_0           |                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | matrix/A[0][1][31]_i_1_n_0           |                                 |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | matrix/A[2][1][31]_i_1_n_0           |                                 |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG | matrix/A[2][0][31]_i_1_n_0           |                                 |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | matrix/A[2][2][31]_i_1_n_0           |                                 |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | matrix/B[0][0][31]_i_1_n_0           |                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | matrix/B[1][3][31]_i_1_n_0           |                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | matrix/B[2][2][31]_i_1_n_0           |                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | matrix/B[0][2][31]_i_1_n_0           |                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | matrix/B[1][0][31]_i_1_n_0           |                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | matrix/B[2][1][31]_i_1_n_0           |                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | matrix/A[1][0][31]_i_1_n_0           |                                 |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | matrix/B[3][2][31]_i_1_n_0           |                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | matrix/B[2][0][31]_i_1_n_0           |                                 |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | matrix/A[1][1][31]_i_1_n_0           |                                 |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG | matrix/B[2][3][31]_i_1_n_0           |                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | matrix/B[1][1][31]_i_1_n_0           |                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | matrix/B[0][1][31]_i_1_n_0           |                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | matrix/FSM_onehot_state_reg_n_0_[12] | rst_IBUF                        |               26 |             32 |         1.23 |
+|  clk_IBUF_BUFG | matrix/B[0][3][31]_i_1_n_0           |                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | matrix/B[1][2][31]_i_1_n_0           |                                 |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | matrix/B[3][3][31]_i_1_n_0           |                                 |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | matrix/B[3][0][31]_i_1_n_0           |                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | matrix/A[0][3][31]_i_1_n_0           |                                 |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG | matrix/A[0][2][31]_i_1_n_0           |                                 |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | matrix/A[3][3][31]_i_1_n_0           |                                 |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | matrix/li[31]_i_1_n_0                | rst_IBUF                        |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG | matrix/lj[31]_i_1_n_0                | rst_IBUF                        |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | matrix/sj[31]_i_1_n_0                | rst_IBUF                        |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | matrix/B[3][1][31]_i_1_n_0           |                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | matrix/A[3][1][31]_i_1_n_0           |                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | matrix/A[1][3][31]_i_1_n_0           |                                 |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG | matrix/si[31]_i_1_n_0                | rst_IBUF                        |               11 |             35 |         3.18 |
+|  clk_IBUF_BUFG | matrix/temp_C[2][0][31]_i_2_n_0      | matrix/temp_C[2][0][31]_i_1_n_0 |               47 |            128 |         2.72 |
+|  clk_IBUF_BUFG | matrix/temp_C[2][2][31]_i_2_n_0      | matrix/temp_C[2][2][31]_i_1_n_0 |               48 |            128 |         2.67 |
+|  clk_IBUF_BUFG | matrix/temp_C[0][2][31]_i_2_n_0      | matrix/temp_C[0][2][31]_i_1_n_0 |               42 |            128 |         3.05 |
+|  clk_IBUF_BUFG | matrix/temp_C[0][0][31]_i_2_n_0      | matrix/temp_C[0][0][31]_i_1_n_0 |               48 |            128 |         2.67 |
++----------------+--------------------------------------+---------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,12 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/Users/ASUS/test_mul/test_mul.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1750741161,verilog,,C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/BRAM.v,,blk_mem_gen_0,,,,,,,,
+C:/Users/ASUS/test_mul/test_mul.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+C:/Users/ASUS/test_mul/test_mul.srcs/sim_1/new/top_matrix_bram_tb.v,1750746084,verilog,,,,top_matrix_bram_tb,,,,,,,,
+C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/BRAM.v,1750660591,verilog,,C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/img_transfer_uart.v,,BRAM,,,,,,,,
+C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/freq_divider.v,1750705470,verilog,,C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/img_transfer_uart.v,,freq_divider,,,,,,,,
+C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/img_transfer_uart.v,1750746171,verilog,,C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/matrix_multiplier.v,,img_transfer_uart,,,,,,,,
+C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/matrix_multiplier.v,1750704240,verilog,,C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/top_matrix_bram.v,,matrix_multiplier,,,,,,,,
+C:/Users/ASUS/test_mul/test_mul.srcs/sources_1/new/top_matrix_bram.v,1750741496,verilog,,C:/Users/ASUS/test_mul/test_mul.srcs/sim_1/new/top_matrix_bram_tb.v,,top_matrix_bram,,,,,,,,

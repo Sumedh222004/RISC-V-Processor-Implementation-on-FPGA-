@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1751018885">
+  <File Type="ROUTE-PWR" Name="top_instruction_reader_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="top_instruction_reader.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="top_instruction_reader_power_summary_routed.pb"/>
+  <File Type="OPT-RQA-PB" Name="top_instruction_reader_rqa_opted.pb"/>
+  <File Type="REPORTS-TCL" Name="top_instruction_reader_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="top_instruction_reader_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="top_instruction_reader_opt.dcp"/>
+  <File Type="OPT-DRC" Name="top_instruction_reader_drc_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="top_instruction_reader_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="top_instruction_reader.hwdef"/>
+  <File Type="OPT-TIMING" Name="top_instruction_reader_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="top_instruction_reader_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="top_instruction_reader_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="top_instruction_reader_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="top_instruction_reader_placed.dcp"/>
+  <File Type="PLACE-IO" Name="top_instruction_reader_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="top_instruction_reader_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="top_instruction_reader_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="top_instruction_reader_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="top_instruction_reader_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="top_instruction_reader_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="top_instruction_reader_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="top_instruction_reader.bin"/>
+  <File Type="PLACE-TIMING" Name="top_instruction_reader_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="top_instruction_reader_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="top_instruction_reader_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="top_instruction_reader_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="top_instruction_reader.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="top_instruction_reader_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="top_instruction_reader_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="top_instruction_reader_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="top_instruction_reader.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="top_instruction_reader_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="top_instruction_reader_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="top_instruction_reader_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="top_instruction_reader_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="top_instruction_reader_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="top_instruction_reader_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="top_instruction_reader_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="top_instruction_reader_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="top_instruction_reader_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="top_instruction_reader_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="top_instruction_reader_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="top_instruction_reader_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="top_instruction_reader_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="top_instruction_reader_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="top_instruction_reader_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="top_instruction_reader_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="top_instruction_reader_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="top_instruction_reader_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="top_instruction_reader_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="top_instruction_reader_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="top_instruction_reader_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_instruction_reader_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="top_instruction_reader_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="top_instruction_reader_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="top_instruction_reader_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="top_instruction_reader_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="top_instruction_reader_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="top_instruction_reader.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="top_instruction_reader_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="top_instruction_reader_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="top_instruction_reader.nky"/>
+  <File Type="BITSTR-BMM" Name="top_instruction_reader_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="top_instruction_reader.mmi"/>
+  <File Type="PDI-FILE" Name="top_instruction_reader.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="top_instruction_reader_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="top_instruction_reader_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="top_instruction_reader.rcfi"/>
+  <File Type="CFI_FILE" Name="top_instruction_reader.cfi"/>
+  <File Type="RNPI_FILE" Name="top_instruction_reader.rnpi"/>
+  <File Type="NPI_FILE" Name="top_instruction_reader.npi"/>
+  <File Type="RBD_FILE" Name="top_instruction_reader.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="top_instruction_reader.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="top_instruction_reader.sysdef"/>
+  <File Type="BG-BGN" Name="top_instruction_reader.bgn"/>
+  <File Type="BG-DRC" Name="top_instruction_reader.drc"/>
+  <File Type="RDI-RDI" Name="top_instruction_reader.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="top_instruction_reader_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="top_instruction_reader_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/data_BRAM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/instruction_test.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/memory.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/riscv_defs.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/riscv_alu.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/riscv_core.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/riscv_csr.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/riscv_csr_regfile.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/riscv_decode.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/riscv_decoder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/riscv_divider.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/riscv_exec.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/riscv_fetch.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/riscv_issue.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/riscv_lsu.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/riscv_mmu.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/riscv_multiplier.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/riscv_pipe_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/riscv_regfile.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/DataHazard.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_instruction_reader.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/instruction_memory.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/Hazard_unit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sim_1/new/instruction_memory_add.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/riscv_trace_sim.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="F:/projects/RISCV/RISCV/RISCV/RISCV_18DEC/RISCV.srcs/sources_1/new/riscv_xilinx_2r1w.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="f:/projects/RISCV/unsorted.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top_instruction_reader"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/xdc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/xdc.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/riscv_core.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+</GenRun>

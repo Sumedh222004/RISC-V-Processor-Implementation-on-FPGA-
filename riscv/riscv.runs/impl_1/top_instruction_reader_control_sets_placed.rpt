@@ -1,0 +1,151 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Jun 27 15:39:55 2025
+| Host         : Anvesh running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_instruction_reader_control_sets_placed.rpt
+| Design       : top_instruction_reader
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    73 |
+|    Minimum number of control sets                        |    73 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   113 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    73 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     5 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     5 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    55 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              11 |            5 |
+| No           | No                    | Yes                    |             192 |           89 |
+| No           | Yes                   | No                     |              23 |            8 |
+| Yes          | No                    | No                     |             124 |           39 |
+| Yes          | No                    | Yes                    |            1202 |          419 |
+| Yes          | Yes                   | No                     |            1079 |          415 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                    Enable Signal                   |                Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+----------------------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                                                    | uart/TxD_i_1_n_0                              |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | uut/u_fetch/pc_f_q_reg[4]_0                        | uut/u_fetch/pc_f_q_reg[8]_0                   |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | data_memory/dbe_w_[3]_i_2_n_0                      | data_memory/dbe_w_[3]_i_1_n_0                 |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/exception_wb_q_reg[4]_1    | rst_IBUF                                      |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | uut/u_fetch/pc_f_q_reg[4]_0                        | uut/u_fetch/pc_f_q_reg[2]_0                   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | uart/bitcounter[3]_i_2_n_0                         | uart/bitcounter[3]_i_1_n_0                    |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/exception_wb_q_reg[4]_2[0] | rst_IBUF                                      |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/csr_wr_wb_q_reg_0[0]       | rst_IBUF                                      |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG | data_memory/temp[23]_i_1_n_0                       |                                               |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | data_memory/temp[15]_i_1_n_0                       |                                               |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | data_memory/temp[7]_i_1_n_0                        |                                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | data_memory/temp[31]_i_1_n_0                       |                                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart/address                                       | transfer_reset_IBUF                           |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | data_memory/addr[9]_i_2_n_0                        | data_memory/addr[9]_i_1_n_0                   |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG | uart/rightshiftreg                                 |                                               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG | data_memory/FSM_onehot_state[10]_i_1_n_0           | rst_IBUF                                      |                2 |             11 |         5.50 |
+|  clk_IBUF_BUFG |                                                    |                                               |                5 |             11 |         2.20 |
+|  clk_IBUF_BUFG |                                                    | uart/counter[0]_i_1_n_0                       |                4 |             14 |         3.50 |
+|  clk_IBUF_BUFG | uut/u_fetch/pc_f_q_reg[4]_0                        |                                               |               10 |             18 |         1.80 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/opcode_wb_q_reg[20]_0      | rst_IBUF                                      |               17 |             25 |         1.47 |
+|  clk_IBUF_BUFG | uut/u_decode/active_q_reg_0[0]                     | rst_IBUF                                      |                9 |             30 |         3.33 |
+|  clk_IBUF_BUFG | uut/u_decode/E[0]                                  | rst_IBUF                                      |               11 |             31 |         2.82 |
+|  clk_IBUF_BUFG | uut/u_decode/branch_q_reg_2[0]                     | rst_IBUF                                      |               15 |             31 |         2.07 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_4                      | uut/u_issue/u_pipe_ctrl/opcode_wb_q_reg[10]_0 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_42                     | uut/u_issue/u_pipe_ctrl/rst_17                |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_46                     | uut/u_issue/u_pipe_ctrl/rst_21                |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_23                     | uut/u_issue/u_pipe_ctrl/opcode_wb_q_reg[9]_2  |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_33                     | uut/u_issue/u_pipe_ctrl/rst_5                 |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_12                     | uut/u_issue/u_pipe_ctrl/opcode_wb_q_reg[11]_0 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_40                     | uut/u_issue/u_pipe_ctrl/rst_15                |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_14                     | uut/u_issue/u_pipe_ctrl/opcode_wb_q_reg[7]_0  |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_47                     | uut/u_issue/u_pipe_ctrl/rst_22                |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_43                     | uut/u_issue/u_pipe_ctrl/rst_18                |                6 |             32 |         5.33 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_38                     | uut/u_issue/u_pipe_ctrl/rst_10                |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_39                     | uut/u_issue/u_pipe_ctrl/rst_11                |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_44                     | uut/u_issue/u_pipe_ctrl/rst_19                |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_0                      | uut/u_issue/u_pipe_ctrl/opcode_wb_q_reg[9]_0  |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_30                     | uut/u_issue/u_pipe_ctrl/rst                   |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_32                     | uut/u_issue/u_pipe_ctrl/rst_3                 |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_13                     | uut/u_issue/u_pipe_ctrl/opcode_wb_q_reg[10]_1 |                5 |             32 |         6.40 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_34                     | uut/u_issue/u_pipe_ctrl/rst_6                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_31                     | uut/u_issue/u_pipe_ctrl/rst_2                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_35                     | uut/u_issue/u_pipe_ctrl/rst_7                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_36                     | uut/u_issue/u_pipe_ctrl/rst_8                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_37                     | uut/u_issue/u_pipe_ctrl/rst_9                 |               22 |             32 |         1.45 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_1                      | uut/u_issue/u_pipe_ctrl/opcode_wb_q_reg[9]_1  |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_41                     | uut/u_issue/u_pipe_ctrl/rst_16                |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_45                     | uut/u_issue/u_pipe_ctrl/rst_20                |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_48                     | uut/u_issue/u_pipe_ctrl/rst_24                |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_49                     | uut/u_issue/u_pipe_ctrl/rst_25                |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_52                     | uut/u_issue/u_pipe_ctrl/rst_28                |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_50                     | uut/u_issue/u_pipe_ctrl/rst_26                |               20 |             32 |         1.60 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_51                     | uut/u_issue/u_pipe_ctrl/rst_27                |               22 |             32 |         1.45 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/rst_53                     | uut/u_issue/u_pipe_ctrl/rst_29                |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/csr_wr_wb_q_reg_3[0]       | rst_IBUF                                      |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/csr_wr_wb_q_reg_2[0]       | rst_IBUF                                      |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/csr_wr_wb_q_reg_1[0]       | rst_IBUF                                      |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/exception_wb_q_reg[4]_0[0] | rst_IBUF                                      |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/opcode_wb_q_reg[22]_0[0]   | rst_IBUF                                      |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | data_memory/din[31]_i_1_n_0                        |                                               |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | data_memory/drdata_o[31]_i_1_n_0                   |                                               |                5 |             32 |         6.40 |
+|  clk_IBUF_BUFG | uut/u_csr/u_csrfile/csr_mcycle_h_q                 | rst_IBUF                                      |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | uut/u_decode/buffer_q_reg[45]_3[0]                 | rst_IBUF                                      |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | uut/u_div/div_complete_w                           | rst_IBUF                                      |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | uut/u_lsu/u_lsu_request/ram_q[0][35]_i_1_n_0       | rst_IBUF                                      |               13 |             36 |         2.77 |
+|  clk_IBUF_BUFG | uut/u_lsu/u_lsu_request/ram_q                      | rst_IBUF                                      |               14 |             36 |         2.57 |
+|  clk_IBUF_BUFG | data_memory/req_is_read6_out                       | data_memory/word_address[9]_i_1_n_0           |                8 |             42 |         5.25 |
+|  clk_IBUF_BUFG | uut/u_div/quotient_q                               | rst_IBUF                                      |               15 |             64 |         4.27 |
+|  clk_IBUF_BUFG | uut/u_decode/buffer_q[66]_i_1_n_0                  | rst_IBUF                                      |               32 |             73 |         2.28 |
+|  clk_IBUF_BUFG | uut/u_lsu/mem_rd_q                                 | rst_IBUF                                      |               26 |             77 |         2.96 |
+|  clk_IBUF_BUFG | uut/u_div/q_mask_q                                 | rst_IBUF                                      |               26 |             95 |         3.65 |
+|  clk_IBUF_BUFG |                                                    | rst_IBUF                                      |               92 |            200 |         2.17 |
+|  clk_IBUF_BUFG | uut/u_issue/u_pipe_ctrl/stall_reg                  | rst_IBUF                                      |              147 |            433 |         2.95 |
++----------------+----------------------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+
+
